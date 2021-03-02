@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>How the Internet works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="docs/images/how%20the%20internet%20works.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="domain.html">DOMAIN NAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="icann.html">ICANN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ip.html">IP ADDRESS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packets.html">PACKETS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="routing.html">ROUTING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dns.html">DNS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http.html">HTTP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https.html">HTTPS PROTOCOLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="w3c.html">W3C</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hmtl.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="css.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="promo-title">WHAT IS DNS?</p>
+                <p>Stands for "Domain Name System." Domain names serve as memorizable names for websites and other services on the Internet. However, computers access Internet devices by their IP addresses. DNS translates domain names into IP addresses, allowing you to access an Internet location by its domain name.</p>
+                <p>Thanks to DNS, you can visit a website by typing in the domain name rather than the IP address. For example, to visit the Tech Terms Computer Dictionary, you can simply type "techterms.com" in the address bar of your web browser rather than the IP address (67.43.14.98). It also simplifies email addresses, since DNS translates the domain name (following the "@" symbol) to the appropriate IP address.</p>
+                <p>To understand how DNS works, you can think of it like the contacts app on your smartphone. When you call a friend, you simply select his or her name from a list. The phone does not actually call the person by name, it calls the person's phone number. DNS works the same way by associating a unique IP address with each domain name.</p>
+                <p>Unlike your address book, the DNS translation table is not stored in a single location. Instead, the data is stored on millions of servers around the world. When a domain name is registered, it must be assigned at least two nameservers (which can be edited through the domain name registrar at any time). The nameserver addresses point to a server that has a directory of domain names and their associated IP addresses. When a computer accesses a website over the Internet, it locates the corresponding nameserver and gets the correct IP address for the website.</p>
+                <p>Since DNS translation creates additional overhead when connecting to websites, ISPs cache DNS records and host the data locally. Once the IP address of a domain name is cached, an ISP can automatically direct subsequent requests to the appropriate IP address. This works great until an IP address changes, in which case the request may be sent to the wrong server or the server will not respond at all. Therefore, DNS caches are updated regularly, usually somewhere between a few hours and a few days.</p>
+
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="docs/images/dnspage.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about-us">
+    <div class="container">
+        <h1 class="title text-center">About US</h1>
+        <div class="row">
+            <div class="col-md-6 about-us">
+                <p class="about-title">Welcome to my Website.</p>
+                <ul>
+                    <li>This is one of my favorite class in the Master Certificate Program.</li>
+                    <li>I initially started this program to get credits for CPA program, but after professor William showed us, the job opportunities I might change career.</li>
+                    <li>This is my project assignment for IS601 Web Development Course.</li>
+                    <li>This website will help you learn, how the internet works, you learn the basics and key factors behind the web and working behind it.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="docs/images/about-network.png" class="image-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="social-media">
+    <div class="container text-center">
+        <p>CONNECT WITH US</p>
+        <div class="social-icons">
+            <a href="https://www.github.com"><img src="docs/images/githubpng.png"></a>
+            <a href="https://www.linkedin.com/"><img src="docs/images/linkedin.png"></a>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
