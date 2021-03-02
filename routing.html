@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>How the Internet works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="docs/images/how%20the%20internet%20works.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="domain.html">DOMAIN NAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="icann.html">ICANN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ip.html">IP ADDRESS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packets.html">PACKETS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="routing.html">ROUTING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dns.html">DNS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http.html">HTTP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https.html">HTTPS PROTOCOLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="w3c.html">W3C</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hmtl.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="css.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="promo-title">WHAT IS ROUTING?</p>
+                <p>Network routing is the process of selecting a path across one or more networks. The principles of routing can apply to any type of network, from telephone networks to public transportation. In packet-switching networks, such as the Internet, routing selects the paths for Internet Protocol (IP) packets to travel from their origin to their destination. These Internet routing decisions are made by specialized pieces of network hardware called routers.</p>
+                <p>Consider the image below. For a data packet to get from Computer A to Computer B, should it pass through networks 1, 3, and 5 or networks 2 and 4? The packet will take a shorter path through networks 2 and 4, but networks 1, 3, and 5 might be faster at forwarding packets than 2 and 4. These are the kinds of choices network routers constantly make.</p>
+                <p class="promo-title">How does routing work?</p>
+                <p>Routers refer to internal routing tables to make decisions about how to route packets along network paths. A routing table records the paths that packets should take to reach every destination that the router is responsible for. Think of train timetables, which train passengers consult to decide which train to catch. Routing tables are like that, but for network paths rather than trains.</p>
+                <p>Routers work in the following way: when a router receives a packet, it reads the headers* of the packet to see its intended destination, like the way a train conductor may check a passenger's tickets to determine which train they should go on. It then determines where to route the packet based on information in its routing tables.</p>
+                <p>Routers do this millions of times a second with millions of packets. As a packet travels to its destination, it may be routed several times by different routers.</p>
+                <p>Routing tables can either be static or dynamic. Static routing tables do not change. A network administrator manually sets up static routing tables. This essentially sets in stone the routes data packets take across the network, unless the administrator manually updates the tables.</p>
+                <p>Dynamic routing tables update automatically. Dynamic routers use various routing protocols (see below) to determine the shortest and fastest paths. They also make this determination based on how long it takes packets to reach their destination — similar to the way Google Maps, Waze, and other GPS services determine the best driving routes based on past driving performance and current driving conditions.</p>
+                <p>Dynamic routing requires more computing power, which is why smaller networks may rely on static routing. But for medium-sized and large networks, dynamic routing is much more efficient.</p>
+
+                <ul>
+                    <li><b>What are the main routing protocols?</b></li>
+                    <p>a protocol is a standardized way of formatting data so that any connected computer can understand the data. A routing protocol is a protocol used for identifying or announcing network paths.</p>
+                    <li><b>The following protocols help data packets find their way across the Internet:</b></li>
+                    <li>IP: The Internet Protocol (IP) specifies the origin and destination for each data packet. Routers inspect each packet's IP header to identify where to send them.</li>
+                    <li>BGP: The Border Gateway Protocol (BGP) routing protocol is used to announce which networks control which IP addresses, and which networks connect to each other. (The large networks that make these BGP announcements are called autonomous systems.) BGP is a dynamic routing protocol.</li>
+                    <li><b>The below protocols route packets within an AS:</b></li>
+                    <li>
+                        OSPF: The Open Shortest Path First (OSPF) protocol is commonly used by network routers to dynamically identify the fastest and shortest available routes for sending packets to their destination.
+                    </li>
+                    <li>RIP: The Routing Information Protocol (RIP) uses "hop count" to find the shortest path from one network to another, where "hop count" means number of routers a packet must pass through on the way. (When a packet goes from one network to another, this is known as a "hop.")</li>
+                    <li>Other interior routing protocols include EIGRP (the Enhanced Interior Gateway Routing Protocol, mainly for use with Cisco routers) and IS-IS (Intermediate System to Intermediate System).</li>
+                </ul>
+                <p class="promo-title">What is a router?</p>
+                <p>A router is a piece of network hardware responsible for forwarding packets to their destinations. Routers connect to two or more IP networks or subnetworks and pass data packets between them as needed. Routers are used in homes and offices for setting up local network connections. More powerful routers operate all over the Internet, helping data packets reach their destinations.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="docs/images/routingpage.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about-us">
+    <div class="container">
+        <h1 class="title text-center">About US</h1>
+        <div class="row">
+            <div class="col-md-6 about-us">
+                <p class="about-title">Welcome to my Website.</p>
+                <ul>
+                    <li>This is one of my favorite class in the Master Certificate Program.</li>
+                    <li>I initially started this program to get credits for CPA program, but after professor William showed us, the job opportunities I might change career.</li>
+                    <li>This is my project assignment for IS601 Web Development Course.</li>
+                    <li>This website will help you learn, how the internet works, you learn the basics and key factors behind the web and working behind it.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="docs/images/about-network.png" class="image-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="social-media">
+    <div class="container text-center">
+        <p>CONNECT WITH US</p>
+        <div class="social-icons">
+            <a href="https://www.github.com"><img src="docs/images/githubpng.png"></a>
+            <a href="https://www.linkedin.com/"><img src="docs/images/linkedin.png"></a>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
